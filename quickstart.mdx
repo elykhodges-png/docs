@@ -1,47 +1,79 @@
 ---
-title: "Quickstart"
-description: "Begin with a guide on the fastest path to a successful outcome"
+title: "Get Started with Inkbot: Your First Tattoo in 4 Steps"
+sidebarTitle: "Quick Start"
+description: "Learn how to create your Inkbot account, upload a tattoo design, preview it on your body, and book your first studio session."
 ---
 
-Describe how someone begins using your product. What is the first thing they need to do? Are there any prerequisites?
+Getting your first Inkbot tattoo is straightforward. In just a few minutes online, you can set up your account, upload your artwork, preview how it will look on your body, and lock in a studio appointment — all before you ever step through the door. Follow the four steps below to go from idea to booked session.
 
-A quickstart should take someone from zero to using your product. They'll get a quick win and a sense of what they can accomplish.
+<Warning>
+  Walk-in sessions are **not available** at any Inkbot studio. All appointments must be booked in advance through your Inkbot account. Same-day bookings may be available at select studios, subject to technician availability.
+</Warning>
 
-## Prerequisites
-
-Before you begin, you must have:
-
-- Requirement one (for example, Node.js 18+, a free account, an API key)
-- Requirement two (for example, a compatible device, a compatible browser, a compatible operating system)
-
-## Get started
+## Steps
 
 <Steps>
-  <Step title="Install">
-    Describe how to install your product or sign up.
+  <Step title="Create Your Account">
+    Go to [inkbot.io/signup](https://inkbot.io/signup) and fill in the registration form:
 
-    ```bash
-    npm install your-package
-    ```
+    - **Full name** — used on your booking confirmation and session records
+    - **Email address** — your login credential and the address for all notifications
+    - **Password** — minimum 8 characters; use a mix of letters, numbers, and symbols
+
+    After submitting the form, check your inbox for a verification email from **hello@inkbot.io** and click the confirmation link. Your account is active as soon as your email is verified.
   </Step>
-  <Step title="Configure">
-    Describe any setup or configuration needed before first use.
 
-    ```bash
-    your-cli init
-    ```
+  <Step title="Upload Your Design">
+    From your **Dashboard**, navigate to **Designs → Upload** and select your artwork file.
+
+    Accepted formats and requirements:
+
+    | Format | Max Size | Notes |
+    |--------|----------|-------|
+    | SVG    | 50 MB    | Recommended for vector art; preserves crisp edges at any scale |
+    | PNG    | 50 MB    | Use the highest resolution available; minimum 300 DPI for print quality |
+    | PDF    | 50 MB    | Single-page only; embed all fonts and flatten transparency before uploading |
+
+    Inkbot automatically checks your file for print compatibility — color space, resolution, and line weight. Any issues are flagged immediately with guidance on how to fix them.
+
+    <Tip>
+      Before uploading, review the [Design Guidelines](/design/design-guidelines) for best practices on preparing your artwork, including recommended canvas sizes, color modes, and minimum stroke widths.
+    </Tip>
   </Step>
-  <Step title="Run it">
-    Show the first thing a user does to see it working.
 
-    ```bash
-    your-cli start
-    ```
+  <Step title="Preview Your Design on Your Body">
+    Open the **3D Body Map** tool from your Dashboard or directly from your uploaded design's detail page.
+
+    Follow these steps to set your placement:
+
+    1. **Choose a body zone** — select the broad area (e.g., forearm, upper back, calf) from the body diagram.
+    2. **Position the design** — drag it to your desired location on the 3D model.
+    3. **Scale and rotate** — use the on-screen controls or pinch/twist gestures to resize and orient the design until it fits naturally.
+    4. **Inspect from all angles** — rotate the 3D model to review how the design wraps around curves and contours.
+    5. **Save your placement** — click **Save Placement** to lock in the configuration. You can save multiple placements and compare them before booking.
+
+    Your saved placement is automatically attached to your session booking in the next step.
+  </Step>
+
+  <Step title="Book Your Studio Session">
+    From your **Dashboard**, go to **Book Session** and complete your booking:
+
+    1. **Select a studio** — choose from the list of certified Inkbot studios near you. Each listing shows availability, distance, and technician ratings.
+    2. **Pick a date and time** — available slots are shown in your local time zone. Slots marked **Express** are optimized for smaller designs (under 10 cm²).
+    3. **Attach your design** — confirm which saved design and placement configuration to use for the session.
+    4. **Confirm your booking** — review the session summary and click **Confirm**. You'll receive a booking confirmation email within a few minutes.
+
+    Your confirmation email includes the studio address, session duration estimate, a checklist of what to bring, and a link to reschedule if needed.
   </Step>
 </Steps>
 
-<Tip>
-  Give people a way to get help. This could be a link to a support page, a chat with a customer support agent, or a forum for your product.
+## Next Steps
 
-  Example: Need help? Reach out to us at [support@yourcompany.com](mailto:support@yourcompany.com).
-</Tip>
+<CardGroup cols={2}>
+  <Card title="Upload a Design" icon="arrow-up-from-bracket" href="/design/upload-design">
+    Explore the full design upload workflow, including batch uploads and design versioning.
+  </Card>
+  <Card title="Manage Your Booking" icon="calendar-days" href="/session/booking">
+    Learn how to reschedule, cancel, or modify your session after booking.
+  </Card>
+</CardGroup>

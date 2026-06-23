@@ -1,0 +1,70 @@
+---
+title: "Tattoo Design Guidelines for Perfect Inkbot Results"
+sidebarTitle: "Design Guidelines"
+description: "Follow these artwork guidelines to ensure your design transfers cleanly and looks its best when printed by the Inkbot robotic system."
+---
+
+The quality of your finished tattoo depends heavily on the quality of the artwork you start with. Inkbot's robotic printing system reproduces your design with exceptional accuracy — which means imperfections in your source file will be reproduced just as faithfully. Follow these guidelines to prepare artwork that transfers cleanly, retains fine detail, and looks exactly as intended on skin.
+
+## Recommended specifications
+
+Use the table below as a checklist before uploading your artwork.
+
+| Specification | Requirement |
+|---------------|-------------|
+| Resolution | 300 DPI minimum (600 DPI recommended for fine detail) |
+| Color mode | RGB or grayscale |
+| Background | Transparent (no white or colored fill) |
+| Stroke weight | Minimum 1 pt / 0.35 mm |
+| Fine detail minimum size | No element smaller than 2 mm at intended print size |
+
+## Colors and shading
+
+Inkbot supports **full-color**, **grayscale**, and **black-only** designs. You are not limited to a fixed ink palette — the system mixes pigments dynamically to reproduce your design's colors as closely as possible.
+
+**Gradients** are fully supported and reproduce smoothly across flat and curved skin surfaces. When using gradients, keep the following in mind:
+
+- Avoid tones below **15% opacity**. Very light values — near-white or near-transparent areas — may not deposit enough pigment to be visible once the skin heals, resulting in a patchy or faded appearance.
+- Ensure gradient transitions span at least **5 mm** of printed area so the blend renders visibly rather than appearing as a hard edge.
+- Highly saturated colors reproduce most accurately when the source file is in RGB color mode. CMYK files are accepted (PDF uploads) but are converted to RGB on import, which may shift some hues slightly.
+
+## What to avoid
+
+<Warning>
+  The following issues are the most common causes of poor print quality. Check your file against each point before uploading.
+
+  - **JPEG files with a white background** — Inkbot does not accept JPEG. If your only source is a JPEG, convert it to PNG and remove the white background in an image editor before uploading. White backgrounds cause bleed artifacts around the design edges.
+  - **Text smaller than 8 pt** — Fine text at small sizes will likely be illegible once printed. Convert all text to outlines and verify legibility at your intended print dimensions.
+  - **Strokes thinner than 0.35 mm** — Hair-thin strokes may not render consistently across curved skin surfaces. Expand all strokes in your vector editor and ensure the minimum width is at least 0.35 mm at 100% print scale.
+</Warning>
+
+## Design tips
+
+- **Keep important elements away from the edges.** Allow at least 3–5 mm of clear space inside the border of your design. Edge placement becomes unpredictable near joints and high-flex areas.
+- **Account for skin stretch zones.** Areas like the inner elbow, back of the knee, and the sides of the torso flex significantly. Avoid placing very fine lines or dense detail in these zones, as movement can distort the finished result over time.
+- **Design at your intended print size.** Scaling a design up significantly after the fact can reveal pixelation in raster elements or unintentional stroke-weight changes in vectors. Set your canvas to the target dimensions before you start.
+- **Test placement with the preview tool before booking.** The Inkbot preview renders a photorealistic mockup on your actual 3D body scan. Use it to confirm that scale, position, and orientation all look right before you commit to a print session.
+- **Use the linework conversion tool for simplification.** If your artwork is complex or has many fine tonal variations, the Design Studio's linework conversion can reduce it to clean, printable lines — often yielding a crisper result than the original raster image.
+
+## Frequently asked questions
+
+<AccordionGroup>
+  <Accordion title="Can I use a photo as my tattoo design?">
+    You can upload a PNG or PDF derived from a photo, but photorealistic images rarely produce ideal tattoo results. Very fine tonal gradations, near-white highlights, and low-contrast areas often don't translate well to skin. If you want a photo-based tattoo, we recommend working with a tattoo artist to convert the photo into a stylised illustration or linework version first, then uploading that artwork to Inkbot. The Design Studio's linework conversion tool can help as a starting point.
+  </Accordion>
+  <Accordion title="What happens to my design after the session?">
+    Your design file stays in your Design Library until you choose to delete it — it is not removed after a print session. The 3D body scan and the specific print configuration (placement, scale, rotation) from your session are handled separately: scan data is deleted within 72 hours unless you opt to save it, and print configurations are stored in your session history. See the [Body Mapping](/design/body-mapping) page for full details on scan data retention.
+  </Accordion>
+  <Accordion title="Can I use a design created by someone else?">
+    You are responsible for ensuring you have the necessary rights to any artwork you upload to Inkbot. Uploading artwork you did not create and do not have a license for may infringe on the original artist's copyright. If you commissioned a design from an artist, confirm in writing that the license covers tattoo reproduction before uploading. Inkbot's terms of service require that all uploaded artwork is either your original work or used with appropriate permission.
+  </Accordion>
+</AccordionGroup>
+
+<CardGroup cols={2}>
+  <Card title="Upload Design" icon="upload" href="/design/upload-design">
+    Upload your prepared artwork and manage your Design Library.
+  </Card>
+  <Card title="Preview" icon="eye" href="/design/preview">
+    Preview your design on a photorealistic body model before booking.
+  </Card>
+</CardGroup>

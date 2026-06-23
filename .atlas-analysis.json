@@ -1,13 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "name": "Inkbot",
+  "projectType": "saas",
+  "projectName": "Elykli Liquor",
+  "projectDescription": "A robotic tattoo printing service that uses 3D body-mapping technology to apply custom tattoo designs directly onto your skin with precision and ease.",
   "theme": "almond",
-  "favicon": "/favicon.svg",
-  "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
-  },
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
   "navigation": {
     "tabs": [
       {
@@ -57,5 +55,21 @@
         ]
       }
     ]
-  }
+  },
+  "keyFeatures": [
+    "3D body-mapping for precise tattoo placement",
+    "Custom design upload and digital preview",
+    "Robotic precision printing directly on skin",
+    "Real-time design scaling and orientation adjustment",
+    "Post-session aftercare guidance",
+    "Personal design library for saved artwork",
+    "Booking system for in-studio sessions"
+  ],
+  "publicApiSurface": [
+    "Design upload endpoint",
+    "Body scan preview",
+    "Session booking flow",
+    "Order history",
+    "Design library management"
+  ]
 }

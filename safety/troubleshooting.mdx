@@ -1,0 +1,127 @@
+---
+title: "Troubleshooting Common Inkbot Issues and Error Messages"
+sidebarTitle: "Troubleshooting"
+description: "Resolve common problems with Inkbot's app, design uploads, body scanning, booking system, and in-session errors with this guide."
+---
+
+Something not working as expected? This guide covers the most common issues customers encounter with the Inkbot app, booking system, and in-studio experience — along with step-by-step fixes for each one. Work through the relevant section below, and if the problem persists, our support team is ready to help.
+
+## App & Account
+
+<AccordionGroup>
+  <Accordion title="I can't log in to my account">
+    Try the following steps in order:
+
+    1. **Double-check your email address** — ensure there are no typos and that you are using the address you registered with.
+    2. **Reset your password** — visit [inkbot.io/reset](https://inkbot.io/reset) and follow the instructions. Check your spam or junk folder if the reset email doesn't arrive within a few minutes.
+    3. **Clear your browser cache and cookies** — stale session data can prevent login from completing. In Chrome, go to **Settings → Privacy and Security → Clear Browsing Data**.
+    4. **Try a different browser or device** — if the issue is browser-specific, switching to Chrome, Firefox, or Edge will help identify the cause.
+
+    If none of the above resolves the issue, contact support at [support@inkbot.io](mailto:support@inkbot.io) with the email address on your account and a description of the error message you are seeing.
+  </Accordion>
+
+  <Accordion title="My design won't upload">
+    If your design fails to upload or you receive an error during the upload process, check the following:
+
+    - **File format** — Inkbot accepts **SVG, PNG, and PDF only**. Files in JPEG, TIFF, PSD, AI, or other formats will be rejected. Export your design to a supported format and try again.
+    - **File size** — the maximum upload size is **50 MB**. If your file exceeds this limit, optimize it using a compression tool or reduce the resolution before uploading.
+    - **Internet connection** — a slow or unstable connection can cause uploads to time out. Switch to a stronger Wi-Fi network or use a wired connection if possible.
+    - **Browser compatibility** — try uploading using a different browser. Chrome and Firefox tend to be the most reliable for file uploads.
+
+    If the upload still fails after checking all of the above, try the upload from the Inkbot mobile app as an alternative.
+  </Accordion>
+
+  <Accordion title="The 3D preview tool is slow or unresponsive">
+    The 3D body-mapping preview tool is a graphics-intensive feature that requires a modern, up-to-date browser to run smoothly.
+
+    - **Supported browsers:** Chrome 90+, Firefox 88+, Safari 14+, Edge 90+. Update your browser if you are running an older version.
+    - **Disable browser extensions** — ad blockers, script blockers, and privacy extensions can interfere with WebGL rendering. Disable extensions temporarily to test.
+    - **Try incognito or private mode** — this disables most extensions automatically and uses a clean session state.
+    - **Check your graphics drivers** — on desktop, make sure your GPU drivers are up to date. The preview tool uses hardware acceleration.
+    - **Reduce other browser load** — close unused tabs and windows to free up memory.
+
+    If the tool remains unresponsive after all of the above, use the Inkbot mobile app, which has a lighter preview mode optimized for mobile hardware.
+  </Accordion>
+</AccordionGroup>
+
+## Booking
+
+<AccordionGroup>
+  <Accordion title="I can't find available time slots">
+    If no appointment slots appear when you search, it usually means the studio is fully booked for the dates you selected. Try the following:
+
+    - **Widen your date range** — search across a longer window (2–3 weeks) to surface more availability.
+    - **Choose a different studio** — use the [studio locator at inkbot.io/studios](https://inkbot.io/studios) to find a nearby location with earlier availability.
+    - **Check back later** — cancellations free up slots throughout the day. Slots released by cancellations appear in real time in the booking tool.
+    - **Join the waitlist** — on the studio page, tap **Join Waitlist** to be notified automatically when a slot opens at your preferred location.
+  </Accordion>
+
+  <Accordion title="I didn't receive my confirmation email">
+    If your booking confirmation email hasn't arrived within 10 minutes of completing your booking:
+
+    1. **Check your spam or junk folder** — confirmation emails from [noreply@inkbot.io](mailto:noreply@inkbot.io) are occasionally filtered by spam tools.
+    2. **Verify your email address** — log in to your account and go to **Account Settings** to confirm the email address on file is correct.
+    3. **Resend the confirmation** — go to **Dashboard → Orders**, find your booking, and select **Resend Confirmation Email**.
+    4. **Check that the booking completed** — if you were redirected to a payment error page, your booking may not have been confirmed. Check your order history before re-booking.
+
+    If the email address on your account is incorrect, update it in **Account Settings** and then resend the confirmation.
+  </Accordion>
+
+  <Accordion title="I need to cancel but it's less than 24 hours away">
+    Cancellations made less than 24 hours before a session start time are subject to a **$25 rescheduling fee**. This fee is charged automatically if you cancel via the app within the 24-hour window.
+
+    If you need to cancel due to an emergency — such as sudden illness or a family emergency — contact Inkbot support directly at [support@inkbot.io](mailto:support@inkbot.io) before cancelling through the app. Include your order number and a brief explanation. Our team reviews emergency waiver requests on a case-by-case basis.
+
+    To reschedule rather than cancel outright, go to **Dashboard → Orders → Reschedule**. Rescheduling to a new date more than 24 hours away does not incur a fee.
+  </Accordion>
+</AccordionGroup>
+
+## In-Studio
+
+<AccordionGroup>
+  <Accordion title="The scanner couldn't capture my skin area">
+    The 3D body scanner uses structured light to map your skin's contours. In some cases, the scan may fail or return incomplete data. Your studio technician can help resolve this in the following ways:
+
+    - **Manual calibration** — the technician can perform a manual calibration pass to adjust the scanner's sensitivity for your skin tone and surface texture.
+    - **Multiple scan passes** — if the target area has existing heavy tattoo coverage, the scanner may need two or more passes to build an accurate map. This is normal and does not add significant time to your session.
+    - **Shaving the area** — fine hair can scatter structured light and interfere with the scan. The technician can shave the target area before re-scanning.
+
+    Do not attempt to clean or exfoliate the area yourself during the session. Let the technician guide the preparation process.
+  </Accordion>
+
+  <Accordion title="The print paused mid-session">
+    Inkbot's robotic arm is equipped with a built-in safety stop that triggers automatically if it detects unexpected movement, pressure variance, or a hardware anomaly. A mid-session pause does not mean your session has failed.
+
+    When a safety stop occurs:
+    - The system saves a **checkpoint** of the last completed print segment.
+    - Your studio technician will assess the situation and confirm it is safe to continue.
+    - The session can be **resumed from the last checkpoint** — no ink is wasted and no completed segments need to be reprinted.
+
+    Do not move the tattooed area until the technician gives the all-clear. Moving abruptly during a safety stop can affect ink alignment when the session resumes.
+  </Accordion>
+
+  <Accordion title="Part of my design didn't print correctly">
+    If you notice that a section of your design is missing, misaligned, or visually inconsistent with the approved preview after your session:
+
+    1. **Before leaving the studio** — point it out to your studio technician immediately. They can log the issue and initiate a support ticket on your behalf.
+    2. **After leaving the studio** — contact Inkbot support at [support@inkbot.io](mailto:support@inkbot.io) within **7 days** of your session. Include:
+       - Clear, well-lit photos of the affected area
+       - Your session order number
+       - A description of the discrepancy compared to the approved design preview
+
+    Verified printing errors are eligible for a **free correction session** at any Inkbot studio. Our support team will review your submission and respond within 2 business days.
+  </Accordion>
+</AccordionGroup>
+
+<Info>
+  For issues not covered here, contact Inkbot support at [support@inkbot.io](mailto:support@inkbot.io) or use the live chat in the app. Support is available Monday–Friday, 9 AM–7 PM in your local time zone.
+</Info>
+
+<CardGroup cols={2}>
+  <Card title="Safety FAQ" icon="circle-question" href="/safety/faq">
+    Browse answers to common questions about safety, pain, healing, design, and booking.
+  </Card>
+  <Card title="Aftercare Guide" icon="heart-pulse" href="/session/aftercare">
+    Follow the day-by-day aftercare instructions to protect your new tattoo and ensure proper healing.
+  </Card>
+</CardGroup>
